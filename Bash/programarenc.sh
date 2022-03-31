@@ -16,7 +16,6 @@ if [ -z "$nombre" ]; then
     exit 2  #ponemos el dos porque no es error sino yo quiero que haga eso 
 fi
 
-
 fnombre=$nombre.c 
 if [ -e "$nombre" ]; then 
     echo "El archivo existe"
