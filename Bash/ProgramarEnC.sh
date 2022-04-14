@@ -30,7 +30,7 @@ echo "Autor:        Abel Hernández">>$fnombre
 echo "fecha:        "$fecha>>$fnombre
 echo "compilador:   "$version>>$fnombre
 echo "compilar:     "gcc -o $salida $fnombre>>$fnombre
-echo "Librerias:    " stdio >> $fnombre
+echo "Librerias:    "stdio >> $fnombre
 echo "resumen:      ">>$fnombre
 echo "*/" >>$fnombre
 echo "">>$fnombre

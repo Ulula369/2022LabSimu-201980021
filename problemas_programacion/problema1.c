@@ -1,18 +1,17 @@
 /*
-Autor:		abel
-Compilador:	 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
-Compilado:	 gcc problema1.c -o problema1
-Fecha: 		 03/15/22
-Librerias: 	studio
-Resumen: 	 Script problema1
-Entrada: 	 
-Salida: 	 
+Autor:        Abel Hernández
+fecha:        Thu Apr 14 10:01:48 CST 2022
+compilador:   gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+compilar:     gcc -o problema1.out problema1.c
+Librerias:    stdio
+resumen:      
 */
 
-
-//Librerias
+//librerias
 #include <stdio.h>
-//Numerar los pasos del pseudocódigo
+
+//librerias
+#include <stdio.h>
 
 int main(){
     //1. declaro y inicializo mis variables
