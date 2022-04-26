@@ -27,7 +27,7 @@ int main(){
     return 0;
 }
 
-//funcion recursiva que busca llamarse a si misma hastra que se cumple la condicion n<=m n%m=0
+//funcion recursiva que busca llamarse a si misma hasta que se cumple la condicion n<=m n%m=0
 int mcd(int m, int n){
     if (n <= m && m%n==0)
     {
