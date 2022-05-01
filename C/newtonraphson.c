@@ -2,7 +2,7 @@
 Autor:        Abel Hernández
 fecha:        Tue Apr 26 18:03:33 CST 2022
 compilador:   gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
-compilar:     gcc -o newtonraphson.out newtonraphson.c
+compilar:     gcc -o newtonraphson.out newtonraphson.c -lm
 Librerias:    stdio
 resumen:      
 */

@@ -10,9 +10,6 @@ resumen:
 //librerias
 #include <stdio.h>
 
-//librerias
-#include <stdio.h>
-
 int main(){
     //1. declaro y inicializo mis variables
     float x=0, media=0;
