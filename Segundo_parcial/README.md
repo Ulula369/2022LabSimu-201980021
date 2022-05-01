@@ -46,6 +46,7 @@ $ gcc -o Valordemoneda.out Valordemoneda.c -lm
 
 $ ./Valordemoneda.c 
 
+$ gnuplot grafica.gp
 ``` 
 
 ## Problema 2: 
@@ -75,5 +76,7 @@ Método numérico: Newton-Raphson [metodonumerico](Segundo_parcial/../metodonume
 $ gcc -o metodonumerico.out metodonumerico.c -lm
 
 $ ./metodonumerico.c 
+
+$ graficametodonumerico.gp
 
 ``` 
