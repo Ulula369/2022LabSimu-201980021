@@ -21,7 +21,7 @@ $ Sudo apt install build-essential
 ## Problema 1: 
 
 ### Enunciado
-![Problema 1](/ejercicio_docker/2022LabSimu-201980021/Imagenes/P%201.jpg)
+![P 1](/ejercicio_docker/2022LabSimu-201980021/Imagenes/P%201.jpg)
 
 ## Metodología
 Para resolver este problema se partió de los datos proporcionados. Primero se declaron dos vectores tiempo y euros, en estos vectores se guardaron los valores proporcinados. Seguidamente se imprimieron en pantalla y luego se procedió a efectuar el cálculo de la regresión lineal de mínimos cuadrados para así obtener la ecuación de la recta que mejor se ajusta a los datos proporcionados... 
@@ -32,13 +32,13 @@ Se pedía que se estimará el año en que el dolar no tendrá valor. La estimaci
 
 ## Diagrama de flujo
 
-![problema 1](/ejercicio_docker/2022LabSimu-201980021/Imagenes/Diagrama%201.jpg)
+![Diagrama 1](/ejercicio_docker/2022LabSimu-201980021/Imagenes/Diagrama%201.jpg)
 
 ## Código
 Comportamiento del dolar estadounidense ante el euro [valordemoneda](Segundo_parcial/../Valordemoneda.c)
 
 ## Gráfica
-![Gráfica 1](/ejercicio_docker/2022LabSimu-201980021/Segundo_parcial/valoresdemoneda.jpg)    
+![valoresdemoneda](/ejercicio_docker/2022LabSimu-201980021/Segundo_parcial/valoresdemoneda.jpg)    
 
 ## Compilación y ejecución
 ```
@@ -52,7 +52,7 @@ $ gnuplot grafica.gp
 ## Problema 2: 
 
 ### Enunciado
-![Problema 2](/ejercicio_docker/2022LabSimu-201980021/Imagenes/P%202.jpg)
+![P 2](/ejercicio_docker/2022LabSimu-201980021/Imagenes/P%202.jpg)
 
 ## Metodología
 Para resolver este problema primero se calculó a mano la primera derivada de la función dada, pues la primera derivada es parte de la ecuación. Luego se escribió el código el cual consiste en prototipar las funciones a utilizar, declarar variables, solicitar al usuario que ingrese un valor aproximado de la raíz, el nivel de tolerancia, el número de iteraciones que desea realizar. Posteriormente con esta información se aplica Newton-Raphson y se calcula la raíz de la función a partir de los datos ingresados. 
@@ -63,13 +63,13 @@ Se pedía que se estimará el año en que el dolar no tendrá valor. La estimaci
 
 ## Diagrama de flujo
 
-![problema 2](/ejercicio_docker/2022LabSimu-201980021/Imagenes/Diagrama%202.jpg)
+![Diagrama 2](/ejercicio_docker/2022LabSimu-201980021/Imagenes/Diagrama%202.jpg)
 
 ## Código
 Método numérico: Newton-Raphson [metodonumerico](Segundo_parcial/../metodonumerico.c)
 
 ## Gráfica 
-![Gráfica 2](/ejercicio_docker/2022LabSimu-201980021/Segundo_parcial/graficametodonumerico.jpg)
+![graficametodonumerico](/ejercicio_docker/2022LabSimu-201980021/Segundo_parcial/graficametodonumerico.jpg)
 
 ## Compilación y ejecución
 ```
