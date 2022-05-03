@@ -12,5 +12,5 @@ set grid
 set style data linespoints   
 f(x) = m*x + b
 fit f(x) "valoresdemoneda" via m, b
-plot "valoresdemoneda", f(x) title "funcion", f(x) title sprintf("%2f*x + %2f", m,b) 
+plot "valoresdemoneda", f(x) title "funcion", f(x) title sprintf("%.3f*x + %.3f", m,b) 
  

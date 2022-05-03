@@ -3,17 +3,19 @@ Autor:        Abel Hernández
 fecha:        Thu Apr 28 16:53:58 CST 2022
 compilador:   gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 compilar:     gcc -o Valordemoneda.out Valordemoneda.c -lm
-Librerias:    stdio, math 
+Librerias:    stdio, math, stdlib
 resumen:      gráfica y recta de mejor aproximación del valor del dolar estadounidense
 */
 
 //librerias
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
+
 //Se define una constante para el tamaño del vector 
 #define NUM 14
 
-//Se declaran las variables
+//Se declaran los vectores
 float tiempo[] = {2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019};
 float euros[] = {1.003,0.981,0.968,0.923,0.880,0.856,0.847,0.826,0.804,0.783,0.792,0.750,0.726,0.738};
 
@@ -21,11 +23,11 @@ float euros[] = {1.003,0.981,0.968,0.923,0.880,0.856,0.847,0.826,0.804,0.783,0.7
 int n = sizeof(tiempo)/sizeof(tiempo[0]);
 
 
-// Prototipar funciones
+// Prototipar las funciones a utilizar
 float suma(float datos[]);
 float sumaMulti(float datos1[], float datos2[]);
 
-
+// Se inicia la función principal
 void main () 
 {
     // Se declaran las variables del problema 
@@ -35,14 +37,70 @@ void main ()
     //Se imprimen las etiquetas y los valores para que el usuario sepa la información 
     puts("Comportamiento de dolar estadounidense ante el euro\n"); 
     puts("Año \t Euros");
+
+    //Inicializamos el puntero de archivo y lo abrimos mientras se
+    //ejecuta el programa
+    
+    //FILE *pf = fopen("Años", "Euros");
+
+    //Se declara la variable i igual a cero y se inicia el for para
+    //contar desde la posicón 0 hasta la posición 13 del vector 
     int i = 0;
     for (i = 0; i < NUM; i++)
     {
-        printf("%.0f \t %.3f\n", tiempo[i], euros[i]);
-    }
+        //Se imprimen en pantalla los valores definidos de los dos vectores
+        printf("%.0f \t %.3f \n", tiempo[i], euros[i]);
+        
+        // Ingresa cada valor de los vectores 
+        //fprintf(pf, "%.0f \t %.3f \n", tiempo[i], euros[i]); Me salía erro de segmetación
+        //cerrar el puntero de archivo
+        //fclose(pf);   
     
+    }
+    printf("\n");
+    printf("********************************************************\n");
+    printf("********************************************************\n");
 
-    // Realiza la suma de los elementos del vector ingresado
+    // Genera la gráfica de los datos contenidos en los vectores
+    system("gnuplot grafica.gp");
+    
+    printf("********************************************************\n");
+    printf("********************************************************\n\n");
+
+    //Se calculan los valores de ecuación lineal, por medio de mínimos cuadrados
+    m = (n*sumaMulti(tiempo,euros)-(suma(tiempo)*suma(euros)))/(n*sumaMulti(tiempo,tiempo)-(suma(tiempo)*suma(tiempo)));
+    b = (suma(euros)-m*suma(tiempo))/n;
+    r = (n*sumaMulti(tiempo,euros)-(suma(tiempo)*suma(euros)))/sqrt((n*sumaMulti(tiempo,tiempo)-(suma(tiempo)*suma(tiempo)))*(n*sumaMulti(euros,euros)-(suma(euros)*suma(euros))));
+    
+    //Imprime la ecuación lineal 
+    printf("y = %.5fx + %.5f \n",m,b);
+    
+    //Imprime coeficiente de determinación r cuadrado 
+    printf("Coeficiente de determinación: %.5f \n\n",r*r); 
+
+    //Se pregunta al usuario el año que desea aproximar 
+    printf("Ingrese el año que desea aproximar:");
+
+    //Se declara la variable local y se le pide al usuario que ingrese el año que desea aproximar
+    scanf("%i", &x);
+    
+    //Se calcular el valor del dolar según el año que ingresó el usario
+    y = (m*x + b);
+
+    //Se imprime el valor con cinco cifras decimales
+    printf("y = %.5f*%i + %.5f\n",m,x,b);  
+    printf("El valor aproximado del dolar es de: %.3f \n\n", y);
+
+    // Estimación del año en el que el dolar no tendrá valor
+    f = (-b/m);
+    printf("Se estima que el año en el que el dolar no tendrá valor será en: %i \n", f);
+    //float e; 
+    e = (m*f + b);
+    printf("Su valor en este año será de: %.3f \n\n", e);  
+
+}   
+
+    // Realiza la suma de los elementos que contiene el vector 
     float suma(float datos[])
     {
         float resp = 0;
@@ -64,35 +122,4 @@ void main ()
         return resp;
     }
 
-    //Se calculan los valores de ecuación lineal, por medio de mínimos cuadrados
-    m = (n*sumaMulti(tiempo,euros)-(suma(tiempo)*suma(euros)))/(n*sumaMulti(tiempo,tiempo)-(suma(tiempo)*suma(tiempo)));
-    b = (suma(euros)-m*suma(tiempo))/n;
-    r = (n*sumaMulti(tiempo,euros)-(suma(tiempo)*suma(euros)))/sqrt((n*sumaMulti(tiempo,tiempo)-(suma(tiempo)*suma(tiempo)))*(n*sumaMulti(euros,euros)-(suma(euros)*suma(euros))));
-    
-    //Imprime la ecuación lineal 
-    printf("y = %.5fx + %.5f \n",m,b);
-    
-    //Imprime coeficiente de determinación r cuadrado 
-    printf("Coeficiente de determinación: %.5f \n\n",r*r); 
-
-    //Se pregunta al usuario el año que desea aproximar 
-    printf("Ingrese el año que desea aproximar:");
-    //Se declara la variable local y se le pide al usuario que ingrese el año que desea aproximar
-    //int x = 0;
-    scanf("%i", &x);
-    
-    //Se calcular el valor del dolar según el año que ingresó el usario
-    y = (m*x + b);
-
-    //Se imprime el valor con cinco cifras decimales
-    printf("y = %.5f*%i + %.5f\n",m,x,b);  
-    printf("El valor aproximado del dolar es de: %.3f \n\n", y);
-
-    // Estimación del año en el que el dolar no tendrá valor
-    f = (-b/m);
-    printf("Se estima que el año en el que el dolar no tendrá valor será en: %i \n", f);
-    //float e; 
-    e = (m*f + b);
-    printf("Su valor en este año será de: %.3f \n\n", e);
-}    
     

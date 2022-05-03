@@ -24,7 +24,7 @@ $ Sudo apt install build-essential
 ![P 1](/ejercicio_docker/2022LabSimu-201980021/Imagenes/P%201.jpg)
 
 ## Metodología
-Para resolver este problema se partió de los datos proporcionados. Primero se declaron dos vectores tiempo y euros, en estos vectores se guardaron los valores proporcinados. Seguidamente se imprimieron en pantalla y luego se procedió a efectuar el cálculo de la regresión lineal de mínimos cuadrados para así obtener la ecuación de la recta que mejor se ajusta a los datos proporcionados... 
+Para resolver este problema se partió de los datos proporcionados. Primero se declaron dos vectores tiempo y euros, en estos vectores se guardaron los valores proporcinados. Seguidamente se imprimieron en pantalla para que el usuario visualizara los datos, para estos se utilizó un ciclo for para que mostrara en pantalla los datos de los dos vectores, luego se procedió a efectuar el cálculo de la regresión lineal de mínimos cuadrados para así obtener la ecuación de la recta que mejor se ajusta a los datos proporcionados, para ello se prototiparon dos funciones una para la suma de los datos de los vectores y otra para la suma multiplicación. Al final el programa ejecuta el archivo gráfica.gp para mostrar la gráfica solicitada. 
 
 Con GNUPLOT se realizó la gráfica y también se realizó el fit de la función, se comparó con la ecuación obtenida en el programa y son casi idénticas. 
 
