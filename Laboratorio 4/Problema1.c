@@ -24,7 +24,7 @@ int main ()
     //Se muestran en pantalla las siguientes etiquetas, opciones a elegir
     printf("¿Cómo desea visualizar los números? \n");
     printf("a) Verlos de forma ascedente \n");
-    printf("b) Verlos de forma descedente \n");
+    printf("d) Verlos de forma descedente \n");
     printf("c) Salir \n");  
     printf("Ingrese su elección: \n");
     //fflush(stdin);    
@@ -62,10 +62,10 @@ int main ()
 
         //Se inicializa los condicionales if, donde se evaluará cada valor
         //ingresado por el usuario
-        if (letra=='b')
+        if (letra=='d')
         {
             //Se muestra en pantalla la opción que el usuario eligío    
-            printf("Usted seleccionó la opción b \n");
+            printf("Usted seleccionó la opción d \n");
             printf("Datos en forma descendente \n");
 
                 //Se inicia el ciclo for para mostrar los valores del vector en forma 
@@ -96,7 +96,7 @@ int main ()
     printf("Usted ingresó una letra incorrecta \n");
     
     }
-    while (letra!='a' || letra!='b' || letra!='c');
+    while (letra!='a' || letra!='d' || letra!='c');
     
 //Regresa al inicio de ciclo do  
 return 0;
