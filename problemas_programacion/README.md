@@ -1,4 +1,4 @@
-# problemas de programacion
+# Problemas de programacion
 Dentro de esta carpeta se documentará y mostrará código de los problemas dejados en clase
 
 ## Requirimientos 
@@ -12,10 +12,10 @@ $ Sudo apt install build-essential
 [MIT](LICENCE)
 
 ## problema 1
-|[problema1](imagenes/Pr1.JPG)
+|[problema1](2022LabSimu-201980021/../imagenes/Pr1.jpg)
 
 ## Código
-Problema1[Problema1](problemas_programacion/../problema1.c)
+[Problema1](problemas_programacion/../problema1.c)
 
 ## Compilación y ejecución
 ```
@@ -25,9 +25,11 @@ $ ./problema1.c
 ``` 
 
 ## problema 2
-|[problema2](imagenes/Pr2.JPG)
+|[problema2](2022LabSimu-201980021/../imagenes/Pr2.jpg)
+
+
 ## Código
-Problema2[Problema2](problemas_programacion/../problema2.c)
+[Problema2](problemas_programacion/../problema2.c)
 
 ## Compilación y ejecución
 ```
@@ -37,10 +39,11 @@ $ ./problema2.c
 ``` 
 
 ## problema 3
-|[problema3](imagenes/Pr3.JPG)
+|[problema3](2022LabSimu-201980021/../imagenes/Pr3.jpg)
+
 
 ## Código
-Problema3[Problema3](problemas_programacion/../problema3.c)
+[Problema3](problemas_programacion/../problema3.c)
 
 ## Compilación y ejecución
 ```
@@ -49,10 +52,11 @@ $ ./problema3.c
 
 ```  
 ## problema 4
-|[problema4](imagenes/Pr4.JPG)
+|[problema4](2022LabSimu-201980021/../imagenes/Pr4.jpg)
+
 
 ## Código
-Problema4[Problema4](problemas_programacion/../problema4.c)
+[Problema4](problemas_programacion/../problema4.c)
 
 ## Compilación y ejecución
 ```
@@ -61,10 +65,11 @@ $ ./problema4.c
 
 ``` 
 ## problema 5
-|[problema5](imagenes/Pr5.JPG)
+|[problema5](2022LabSimu-201980021/../imagenes/Pr5.jpg)
+
 
 ## Código
-Problema5[Problema5](problemas_programacion/../problema5.c)
+[Problema5](problemas_programacion/../problema5.c)
 
 ## Compilación y ejecución
 ```
@@ -74,10 +79,11 @@ $ ./problema5.c
 ``` 
 
 ## problema 6
-|[problema6](imagenes/Pr6.JPG)
+|[problema6](2022LabSimu-201980021/../imagenes/Pr6.jpg)
+
 
 ## Código
-Problema6[Problema6](problemas_programacion/../problema6.c)
+|[Problema6](problemas_programacion/../problema6.c)
 
 ## Compilación y ejecución
 ```
@@ -85,4 +91,3 @@ $ gcc -o problema6.out problema6.c
 $ ./problema6.c
 
 ``` 
-
