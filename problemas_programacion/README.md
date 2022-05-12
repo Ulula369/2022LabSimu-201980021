@@ -20,6 +20,8 @@ Problema1[Problema1](problemas_programacion/../problema1.c)
 ## Compilación y ejecución
 ```
 $ gcc -o problema1.out problema1.c 
+$ ./problema1.c
+
 ``` 
 
 ## problema 2
@@ -30,6 +32,8 @@ Problema2[Problema2](problemas_programacion/../problema2.c)
 ## Compilación y ejecución
 ```
 $ gcc -o problema2.out problema2.c 
+$ ./problema2.c
+
 ``` 
 
 ## problema 3
@@ -42,6 +46,8 @@ Problema3[Problema3](problemas_programacion/../problema3.c)
 ## Compilación y ejecución
 ```
 $ gcc -o problema3.out problema3.c -lm
+$ ./problema3.c
+
 ```  
 ## problema 4
 |[problema4](imagenes/Pr4.JPG)
@@ -52,6 +58,8 @@ Problema4[Problema4](problemas_programacion/../problema4.c)
 ## Compilación y ejecución
 ```
 $ gcc -o problema4.out problema4.c 
+$ ./problema4.c
+
 ``` 
 
 ## problema 5
@@ -63,6 +71,8 @@ Problema5[Problema5](problemas_programacion/../problema5.c)
 ## Compilación y ejecución
 ```
 $ gcc -o problema5.out problema5.c 
+$ ./problema5.c
+
 ``` 
 
 ## problema 6
@@ -74,5 +84,7 @@ Problema6[Problema6](problemas_programacion/../problema6.c)
 ## Compilación y ejecución
 ```
 $ gcc -o problema6.out problema6.c 
+$ ./problema6.c
+
 ``` 
 
