@@ -11,11 +11,15 @@ resumen:
 #include <stdio.h>
 
 //declaracion e inicializacion de variables
-int x=0, n=0, max=0, min=0;
+int x=0;
+int n=0;
+int max=0;
+int min=0;
 float med=0;
 
-int main(){
-    //1. leer los datos ingresados
+int main()
+{
+    //leer los datos ingresados
     puts("bienvenido ingrese valores enteros de alturas, para finalizar ingrese un valor negativo");
     puts("Ingrese una altura: ");
     scanf("%d", &x);

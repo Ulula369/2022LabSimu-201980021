@@ -10,7 +10,7 @@ Header
 #bienvenida 
 echo "* Generador de Archivos de C***"
 #obtener y validar  el nombre del archivo
-read -p " Ingrese nombre del archivo"  nombre 
+read -p " Ingrese nombre del archivo: "  nombre 
 if [ -z "$nombre" ]; then 
     echo "No ingreso un nombre válido"
     exit 2  #ponemos el dos porque no es error sino yo quiero que haga eso 
