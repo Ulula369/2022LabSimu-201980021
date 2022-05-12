@@ -43,7 +43,6 @@ $ ./problema2.c
 Problema3[Problema3](problemas_programacion/../problema3.c)
 
 ## Compilación y ejecución
-## Compilación y ejecución
 ```
 $ gcc -o problema3.out problema3.c -lm
 $ ./problema3.c
@@ -61,7 +60,6 @@ $ gcc -o problema4.out problema4.c
 $ ./problema4.c
 
 ``` 
-
 ## problema 5
 |[problema5](imagenes/Pr5.JPG)
 
